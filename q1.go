@@ -29,16 +29,16 @@ func new_Matrix(r int, c int) Matrix{
 
 
 func (m Matrix) print() bool {
-	fmt.Println("[" )
+	fmt.Println("{" )
 
 	for i := 0; i < m.row; i++ {
 		fmt.Printf("%s", "[")
 		for j := 0; j < m.col; j++ {
 			fmt.Printf("%d,",m.matrix[i][j])
 		}
-		fmt.Println("],")
+		fmt.Printf("},")
 	}
-	fmt.Println("]")
+	fmt.Printf("}")
 	return true
 }
 
