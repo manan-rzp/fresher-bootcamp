@@ -32,7 +32,7 @@ func (m Matrix) print() bool {
 	fmt.Println("{" )
 
 	for i := 0; i < m.row; i++ {
-		fmt.Printf("%s", "[")
+		fmt.Printf("%s", "{")
 		for j := 0; j < m.col; j++ {
 			fmt.Printf("%d,",m.matrix[i][j])
 		}
@@ -78,4 +78,6 @@ func main(){
 
 	m3 := m1.add(m2)
 	m3.print()
+	var c byte='b'
+	fmt.Printf("%q",c)
 }
