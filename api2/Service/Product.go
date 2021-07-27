@@ -27,9 +27,9 @@ func GetAllProduct(product *[]Models.Product) (err error) {
 	return nil
 }
 
-func UpdateProduct(product *Models.Product) (err error) {
+func UpdateProduct(product *Models.Product,id string) (err error) {
 	mu.Lock()
-	err = Config.DB.Update(product).Error;
+	err = Config.DB.Where("id = ?",id).Update(product).Error;
 	mu.Unlock()
 
 	if err != nil {

@@ -1,15 +1,14 @@
 package Test
 
+
 import (
-	"fmt"
 	"github.com/jinzhu/gorm"
 	"net/http"
 	"net/http/httptest"
+	"store-api/Config"
+	"store-api/Router"
 	"strings"
 	"testing"
-	"store-api/Config"
-	"store-api/Models"
-	"store-api/Router"
 )
 
 var err error
